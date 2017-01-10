@@ -5,8 +5,7 @@ import com.example.dto.system.BananaDto;
 import com.example.mapper.system.BananaMapper;
 import com.example.service.BananaServiceImpl;
 import com.querydsl.core.types.Predicate;
-import org.intellift.sol.controller.querydsl.api.QueryDslCrudApiController;
-import org.intellift.sol.mapper.PageMapper;
+import org.intellift.sol.controller.querydsl.api.QueryDslAsymmetricCrudApiController;
 import org.intellift.sol.service.querydsl.QueryDslCrudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -21,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/bananas")
-public class BananaControllerImpl implements QueryDslCrudApiController<Banana, BananaDto, String> {
+public class BananaControllerImpl implements QueryDslAsymmetricCrudApiController<Banana, BananaDto, BananaDto, String> {
 
     private final BananaServiceImpl bananaService;
 
@@ -34,8 +33,13 @@ public class BananaControllerImpl implements QueryDslCrudApiController<Banana, B
     }
 
     @Override
-    public PageMapper<Banana, BananaDto> getMapper() {
+    public BananaMapper getMapper() {
         return bananaMapper;
+    }
+
+    @Override
+    public BananaMapper getReferenceMapper() {
+        return getMapper();
     }
 
     @Override

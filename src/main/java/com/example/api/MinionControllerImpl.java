@@ -5,8 +5,7 @@ import com.example.dto.system.MinionDto;
 import com.example.mapper.system.MinionMapper;
 import com.example.service.MinionServiceImpl;
 import com.querydsl.core.types.Predicate;
-import org.intellift.sol.controller.querydsl.api.QueryDslCrudApiController;
-import org.intellift.sol.mapper.PageMapper;
+import org.intellift.sol.controller.querydsl.api.QueryDslAsymmetricCrudApiController;
 import org.intellift.sol.service.querydsl.QueryDslCrudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -21,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/minions")
-public class MinionControllerImpl implements QueryDslCrudApiController<Minion, MinionDto, String> {
+public class MinionControllerImpl implements QueryDslAsymmetricCrudApiController<Minion, MinionDto, MinionDto, String> {
 
     private final MinionServiceImpl minionService;
 
@@ -34,7 +33,12 @@ public class MinionControllerImpl implements QueryDslCrudApiController<Minion, M
     }
 
     @Override
-    public PageMapper<Minion, MinionDto> getMapper() {
+    public MinionMapper getMapper() {
+        return minionMapper;
+    }
+
+    @Override
+    public MinionMapper getReferenceMapper() {
         return minionMapper;
     }
 
