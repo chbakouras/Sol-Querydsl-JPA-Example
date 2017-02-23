@@ -39,7 +39,7 @@ public class MinionControllerImpl implements QueryDslAsymmetricCrudApiController
 
     @Override
     public MinionMapper getReferenceMapper() {
-        return minionMapper;
+        return getMapper();
     }
 
     @Override
