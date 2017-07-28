@@ -15,9 +15,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 @RestController
 @RequestMapping("/bananas")
 public class BananaControllerImpl implements QueryDslAsymmetricCrudApiController<Banana, BananaDto, BananaDto, String> {

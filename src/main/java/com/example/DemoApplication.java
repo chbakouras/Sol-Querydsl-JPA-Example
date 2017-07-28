@@ -58,7 +58,6 @@ public class DemoApplication implements CommandLineRunner {
                 });
 
         bananaSdk.getAll()
-                .map(HttpEntity::getBody)
                 .map(Slice::getContent)
                 .map(List::size)
                 .getOption()

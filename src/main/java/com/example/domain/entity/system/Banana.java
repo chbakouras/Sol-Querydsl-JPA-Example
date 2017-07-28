@@ -6,9 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 @Entity
 public class Banana extends AbstractEntity {
 

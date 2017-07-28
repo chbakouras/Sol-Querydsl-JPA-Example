@@ -7,9 +7,6 @@ import org.hibernate.id.IdentifierGenerator;
 import java.io.Serializable;
 import java.util.UUID;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 public class UUIDGenerator implements IdentifierGenerator {
 
     @Override

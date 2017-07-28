@@ -3,9 +3,6 @@ package com.example.dto.system;
 import com.example.dto.AbstractDto;
 import com.example.dto.Reference;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 public class BananaDto extends AbstractDto {
 
     private Double juicy;

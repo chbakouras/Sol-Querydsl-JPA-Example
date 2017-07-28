@@ -5,9 +5,6 @@ import org.intellift.sol.sdk.client.AbstractCrudApiAsyncClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.AsyncRestTemplate;
 
-/**
- * @author Achilleas Naoumidis
- */
 @Component
 public class BananaSdk extends AbstractCrudApiAsyncClient<BananaDto, String> {
 

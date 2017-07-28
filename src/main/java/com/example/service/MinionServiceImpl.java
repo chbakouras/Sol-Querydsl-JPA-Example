@@ -6,9 +6,6 @@ import org.intellift.sol.domain.querydsl.repository.QueryDslRepository;
 import org.intellift.sol.service.querydsl.QueryDslCrudService;
 import org.springframework.stereotype.Service;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 @Service
 public class MinionServiceImpl implements QueryDslCrudService<Minion, String> {
 

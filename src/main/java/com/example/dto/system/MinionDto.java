@@ -2,9 +2,6 @@ package com.example.dto.system;
 
 import com.example.dto.AbstractDto;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 public class MinionDto extends AbstractDto {
 
     private String name;

@@ -1,8 +1,5 @@
 package com.example.dto;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 public class Reference {
 
     private String id;

@@ -4,9 +4,6 @@ import com.example.domain.entity.system.Minion;
 import org.intellift.sol.domain.querydsl.repository.QueryDslRepository;
 import org.springframework.stereotype.Repository;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 @Repository
 public interface MinionRepository extends QueryDslRepository<Minion, String> {
 }

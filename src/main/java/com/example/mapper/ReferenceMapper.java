@@ -10,9 +10,6 @@ import javax.persistence.PersistenceContext;
 import java.util.Objects;
 import java.util.Optional;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 
 @Component
 public class ReferenceMapper {

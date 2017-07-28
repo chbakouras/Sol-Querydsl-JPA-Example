@@ -7,9 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.util.List;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 @Entity
 public class Minion extends AbstractEntity {
 

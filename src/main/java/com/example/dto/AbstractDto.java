@@ -2,9 +2,6 @@ package com.example.dto;
 
 import org.intellift.sol.domain.Identifiable;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 public class AbstractDto implements Identifiable<String> {
 
     private String id;

@@ -7,9 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 @MappedSuperclass
 public class AbstractEntity implements Identifiable<String> {
 

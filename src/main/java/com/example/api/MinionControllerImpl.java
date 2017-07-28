@@ -15,9 +15,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author Chrisostomos Bakouras.
- */
 @RestController
 @RequestMapping("/minions")
 public class MinionControllerImpl implements QueryDslAsymmetricCrudApiController<Minion, MinionDto, MinionDto, String> {
